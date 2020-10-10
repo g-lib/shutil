@@ -1,8 +1,14 @@
+/*
+* @Author: TaceyWong
+* @Date:   2020-09-21 12:20:36
+* @Last Modified by:   TaceyWong
+* @Last Modified time: 2020-09-23 17:08:34
+*/
 package shutil
 
 // Error shutil base error
 type Error struct{
-
+	Err error
 }
 
 // SameFileError Raised when source and destination are the same file.
