@@ -1,17 +1,17 @@
 package shutil
 
 // Error shutil base error
-type Error struct{
+type Error struct {
 	Err error
 }
 
 // SameFileError Raised when source and destination are the same file.
-type SameFileError struct{
+type SameFileError struct {
 	Error
 }
 
-// SpecialFileError Raised when trying to do a kind of operation 
-// (e.g. copying) which is not supported on a special file 
+// SpecialFileError Raised when trying to do a kind of operation
+// (e.g. copying) which is not supported on a special file
 // (e.g. a named pipe)
 type SpecialFileError struct {
 	Error
@@ -27,18 +27,17 @@ type ReadError struct {
 	Error
 }
 
-// RegistryError Raised when a registry operation with 
+// RegistryError Raised when a registry operation with
 // the archiving and unpacking registries fails
-type RegistryError {
+type RegistryError struct {
 	Error
 }
 
-// giveUpOnFastCopy Raised as a signal to fallback on using 
+// giveUpOnFastCopy Raised as a signal to fallback on using
 // raw read()/write() file copy when fast-copy functions fail to do so.
 type giveUpOnFastCopy struct {
 	Error
 }
-
 
 /* os error
 var (
@@ -53,4 +52,4 @@ var (
 	ErrNoDeadline       = errNoDeadline()       // "file type does not support deadline"
 	ErrDeadlineExceeded = errDeadlineExceeded() // "i/o timeout"
 )
- */
+*/
