@@ -1,4 +1,4 @@
-# shutil
+# shutil [仅适用于Linux]
 
 [English](./README_en.md)
 

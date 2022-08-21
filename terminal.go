@@ -13,7 +13,7 @@ type winsize struct {
 }
 
 // GetTerminalSize Get the size of the terminal window.
-func GetTerminalSize() (c, l int, err error) {
+func GetTerminalSize(fallback ...winsize) (c, l int, err error) {
 	ws := &winsize{}
 	retCode, _, errno := syscall.Syscall(syscall.SYS_IOCTL,
 		uintptr(syscall.Stdin),

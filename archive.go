@@ -1,10 +1,17 @@
 package shutil
 
+import "fmt"
+
 // ArchiveFormat obj
 type ArchiveFormat struct {
 	Name  string
 	Sufix []string
 	Desc  string
+}
+
+func (af ArchiveFormat) String() string {
+	return fmt.Sprintf("\nName:%s\nSufix:%v\nDesc:%v\n",
+		af.Name, af.Sufix, af.Desc)
 }
 
 // RegisterArchiveFormat Register an archiver for the format name.

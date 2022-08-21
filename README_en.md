@@ -1,4 +1,4 @@
-# shutil
+# shutil [Linux Only]
 
 shutil——port of [Python's `shutil`](https://github.com/python/cpython/blob/3.8/Lib/shutil.py)-[PyDoc](https://docs.python.org/zh-cn/3/library/shutil.html) offers a number of high-level operations on files and collections of files. In particular, functions are provided which support file copying and removal.
 
